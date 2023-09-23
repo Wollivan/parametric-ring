@@ -30,9 +30,10 @@ module cIntASym() {
 }
 
 
+
 module extrudePiece() {
   intersection() {
-    #cIntASym();
+    cIntASym();
     square([cw*2,cw*3], center=true);
   }
 }
