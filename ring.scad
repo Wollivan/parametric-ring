@@ -2,7 +2,7 @@ $fn=360;
 cw = 1.5; // circle width
 cr = 6;
 rwMod = cr/1.3; // ring wall width (increase to descrease wall size)
-desiredRingHole = 21;
+desiredRingHole = 19.5;
 ringD = (desiredRingHole + 0.75) / 2; // ring hole diameter
 
 // 5 = 8.5
