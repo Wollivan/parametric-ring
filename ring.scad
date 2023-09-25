@@ -1,9 +1,9 @@
 $fn=360;
 cw = 1.5; // circle width
-cr =9.8;
-rwMod = 9.2; // ring wall width (increase to descrease wall size)
-desiredRingHole = 19.51;
-ringD = (desiredRingHole + 1.5) / 2; // ring hole diameter
+cr = 6;
+rwMod = cr/1.3; // ring wall width (increase to descrease wall size)
+desiredRingHole = 21;
+ringD = (desiredRingHole + 0.75) / 2; // ring hole diameter
 
 // 5 = 8.5
 // 6 = 10.5
@@ -23,8 +23,8 @@ module cIntSym() {
 
 module cIntASym() {
   intersection() {
-    translate([cr*5-0.25,0,0])
-      circle(r = cr*10, $fn = 100);
+    translate([cr*3-0.25,0,0])
+      circle(r = cr*3, $fn = 100);
     cIntSym();
   }
 }
@@ -44,6 +44,6 @@ module ring() {
       extrudePiece();
 }
 
-
+// cIntSym();
 // extrudePiece();
 ring();
